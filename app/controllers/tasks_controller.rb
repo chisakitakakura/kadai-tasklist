@@ -40,11 +40,11 @@ class TasksController < ApplicationController
   end
 
   def destroy
-    @tasklist = Tasklist.find(params[:id])
+    @tasklist = Task.find(params[:id])
     @tasklist.destroy
 
     flash[:success] = 'Tasklist は正常に削除されました'
-    redirect_to tasklists_url
+    redirect_to tasks_url
   end
   
   private
