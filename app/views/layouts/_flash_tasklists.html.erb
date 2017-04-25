@@ -1,6 +1,8 @@
 <% flash.each do |tasklist_type, tasklist| %>
 
-  <div>
+  <div class="alert alert-
+<%= tasklist_type %>
+">
 <%= tasklist %>
-</div>
+  </div>
 <% end %>
